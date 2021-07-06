@@ -7,7 +7,7 @@ if [ -d "$HOME/.steam/root/compatibilitytools.d/$( echo $PROTON_VERSION | grep -
 	exit 0
 fi
 wget "$PROTON_URL" -q --show-progress
-if [[ ! -d ~/.steam/root/compatibilitytools.d ]]; then
+if [ ! -d ~/.steam/root/compatibilitytools.d ]; then
 	mkdir ~/.steam/root/compatibilitytools.d
 	echo "Made new directory"
 fi
